@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+ <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+ </head>
+<body>
+    <a-scene>
+      <a-camera wasd-controls-enabled="false" position="0 10 20"></a-camera>
+      <a-assets>        
+        <a-asset-item id="train-obj" src="./models/Trains/tinker.obj"></a-asset-item>
+        <a-asset-item id="train-mtl" src="./models/Trains/obj.mtl"></a-asset-item>
+        <a-asset-item id="train-gltf" src="./models/Trains/Trains.glb"></a-asset-item>
+      </a-assets>
+
+      <a-image src="des2.jpg" scale="84 60 0"></a-image>
+
+      <a-entity obj-model="obj: #train-obj; mtl: #train-mtl"  position="7 0 2" rotation="-90 0 -90" scale="0.2 0.2 0.2 "
+      ></a-entity>
+
+    </a-scene>
+  </body>
+</html>
